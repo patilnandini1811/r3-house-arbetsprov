@@ -1,16 +1,58 @@
-# React + Vite
+# React + Vite + Tailwind CSS
+House Figma to Responsive React Build
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is my implementation of the “House” assignment.
+The goal was to recreate the desktop design from Figma and then interpret how the layout should behave on mobile. I focused on keeping the look clean, readable, and as close to the design as possible.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## React Compiler
+# About the Design
+Desktop
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- The desktop version follows the Figma sketch:
 
-## Expanding the ESLint configuration
+- Hero section with large background image
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Text placed on top using layered positioning
+
+- Custom angled button using CSS clip-path
+
+- Two-column content block
+
+- Gallery section with overlay titles
+
+- Footer with the large decorative “HOUSE” text
+
+# Mobile
+
+There was no mobile design in the Figma file, so I created my own interpretation. I adjusted text sizes, added more spacing, stacked sections vertically, and made the buttons slightly smaller on small screens. The idea was simply to keep the same look and feel, but in a way that works comfortably on a phone.
+
+# Tech Choices
+
+- React + Vite
+I chose React for the component structure and Vite for a fast, simple setup.
+
+- Tailwind CSS
+Tailwind made it easy to match the spacing and layout from Figma and to handle responsive behavior without needing much custom CSS.
+
+- Custom Button Component
+The angled button shape is created using clip-path. The component accepts children and className, which makes it easy to reuse with different text and colors across the project.
+
+# How to Run
+npm install
+npm run dev
+
+# Build for Production
+npm run build
+
+# Project Structure 
+src/
+components/
+assets/
+
+App.jsx
+main.jsx
+
+# Author
+Nandini Patil
+Frontend developer
