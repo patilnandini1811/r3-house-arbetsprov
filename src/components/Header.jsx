@@ -7,9 +7,7 @@ const Header = () => {
    <div className="text-white text-[30px] font-normal leading-none tracking-wide">
     House
    </div>
-   <img src={hamburgerImage}
-      alt="Hamburger Menu"
-      className="w-[43px] h-[30px] object-contain cursor-pointer"/>
+   <a className="text-4xl text-white" href='#'> &#8801;</a>
    
    </hrader>
 
